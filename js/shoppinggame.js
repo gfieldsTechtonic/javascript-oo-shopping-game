@@ -12,16 +12,16 @@ var player = {
     score,
     items,
 
-    getCurrentScore: () => score,
+    getCurrentScore: () => this.score,
 
     addPoints: (points) =>{
 
-        score += points;
+        this.score += points;
     },
 
     deductPoints: (points) =>{
 
-        score -= points;
+        this.score -= points;
     }
 }
 
