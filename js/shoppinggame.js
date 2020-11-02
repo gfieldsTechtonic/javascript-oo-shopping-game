@@ -14,18 +14,16 @@ let player = {
     items,
 
     getCurrentScore() {
+
+        return this.score;
+    },
+    addPoints(points) {
+
+        this.score = this.score + points;
+    },
+    deductPoints(points) {
         
-        this.score
-    },
-
-    addPoints(points){
-
-        this.score += points;
-    },
-
-    deductPoints(points){
-
-        this.score -= points;
+        this.score = this.score - points;
     }
 };
 
